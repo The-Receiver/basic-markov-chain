@@ -2,7 +2,7 @@ import random
 
 file = open('hamlet.txt').read()
 
-def tokenize (str):
+def tokenize(str):
    return str.split()
 
 #todo: allow phrase lengths of more than one
@@ -30,6 +30,5 @@ def random_driver(dict, n):
       strbuilder = strbuilder + ' ' + string 
     return(strbuilder)
 
-#dict = build_dict(tokenize(file))
 dict = build_dict(tokenize(file))
 print(random_driver(dict,100))
